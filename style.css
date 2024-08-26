@@ -1,0 +1,70 @@
+body {
+  background: #000;
+}
+
+.container {
+  left: 50%;
+  margin: -50px;
+  position: absolute;
+  top: 50%;
+}
+
+.spinner {
+  height: 100px;
+  margin: auto;
+  position: relative;
+  width: 100px;
+}
+
+.spinner div {
+  animation: fade 1.05s linear infinite;
+  background: #999;
+  border-radius: 10px;
+  height: 30px;
+  left: 45px;
+  opacity: 0.05;
+  position: absolute;
+  top: 35px;
+  width: 10px;
+}
+.spinner div:nth-child(1) {
+  animation-delay: 0.39s;
+  transform: rotate(0) translate(0, -30px);
+}
+.spinner div:nth-child(2) {
+  animation-delay: 0.52s;
+  transform: rotate(45deg) translate(0, -30px);
+}
+.spinner div:nth-child(3) {
+  animation-delay: 0.65s;
+  transform: rotate(90deg) translate(0, -30px);
+}
+.spinner div:nth-child(4) {
+  animation-delay: 0.78s;
+  transform: rotate(135deg) translate(0, -30px);
+}
+.spinner div:nth-child(5) {
+  animation-delay: 0.91s;
+  transform: rotate(180deg) translate(0, -30px);
+}
+.spinner div:nth-child(6) {
+  animation-delay: 1.04s;
+  transform: rotate(225deg) translate(0, -30px);
+}
+.spinner div:nth-child(7) {
+  animation-delay: 1.17s;
+  transform: rotate(270deg) translate(0, -30px);
+}
+.spinner div:nth-child(8) {
+  animation-delay: 1.3s;
+  transform: rotate(315deg) translate(0, -30px);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
